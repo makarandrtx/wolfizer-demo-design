@@ -98,18 +98,21 @@ class _SignInScreenState extends State<SignInScreen> {
             children: [
               Material(
                 elevation: 5.0,
-                color: Colors.grey[400],
+                color: Colors.blueAccent.shade200,
                 borderRadius: BorderRadius.circular(15.0),
                 child: MaterialButton(
                   onPressed: () {
                     setState(() {
-                      Navigator.pushNamed(context, MyPhone.id);
+                      Navigator.pushNamed(
+                          context,
+                          FolderScreen
+                              .id); //bypassed phone.dart file for testing purposes
                     });
                   },
                   minWidth: 200.0,
                   height: 42.0,
                   child: const Text(
-                    'Sign In',
+                    'SIGN IN',
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.w700),
                   ),
@@ -125,9 +128,10 @@ class _SignInScreenState extends State<SignInScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
+              Text(
                 'Don\'t have an account?',
-                style: TextStyle(fontWeight: FontWeight.w700),
+                style: TextStyle(
+                    fontWeight: FontWeight.w700, color: Colors.grey.shade400),
               ),
               TextButton(
                   onPressed: (/*implement signin functionality*/) {},

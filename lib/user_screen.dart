@@ -60,17 +60,17 @@ class _UserScreenState extends State<UserScreen> {
               scrollDirection: Axis.horizontal,
               children: [
                 UserScreenCard(
-                  color: Colors.grey.shade300,
+                  color: Colors.white,
                   cardText: 'Horticulture',
                   icon: Icons.coffee,
                 ),
                 UserScreenCard(
-                  color: Colors.grey.shade300,
+                  color: Colors.white,
                   cardText: 'Vegetables',
                   icon: Icons.food_bank_rounded,
                 ),
                 UserScreenCard(
-                  color: Colors.grey.shade300,
+                  color: Colors.white,
                   cardText: 'Fruits',
                   icon: Icons.discord_sharp,
                 ),
